@@ -3,21 +3,23 @@ import Hero from "@/components/hero/Hero";
 import Navbar from "@/components/navbar/Navbar";
 import About from "@/components/about/About";
 import Service from "@/components/services/Service";
-import Doctors from "@/components/doctors/Doctors";
-import Testimonials from "@/components/testmonials/Testimonials";
+import { Doctors } from "./components/doctors/Doctors";
+import { Testimonials } from "./components/testimonials/Testimonials";
 
 export default function App() {
   return (
-    <div className="wrapper">
+    <>
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Service />
-        <Doctors />
-        <Testimonials />
+        <div className="wrapper">
+          <About />
+          <Service />
+          <Doctors />
+          <Testimonials />
+        </div>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
