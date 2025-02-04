@@ -6,7 +6,7 @@ import SectionHeader from "../common/SectionHeader";
 
 export function Testimonials() {
   return (
-    <section className="section-container">
+    <section className="section-container" id="testimonials">
       <SectionHeader
         heading="Testimonials"
         subheading="What Our Patients Say"

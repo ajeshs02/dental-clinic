@@ -10,6 +10,14 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
+export const navLinks = [
+  { label: "Home", link: "#" },
+  { label: "About", link: "#about" },
+  { label: "Service", link: "#services" },
+  { label: "Doctors", link: "#doctors" },
+  { label: "Testimonials", link: "#testimonials" },
+];
+
 export const aboutIcons = [
   { icon: FaUserMd, title: "Qualified", subtitle: "Doctors" },
   { icon: FaProcedures, title: "Emergency", subtitle: "Services" },

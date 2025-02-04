@@ -6,7 +6,7 @@ import SectionHeader from "../common/SectionHeader";
 
 export function Doctors() {
   return (
-    <section className="section-container">
+    <section className="section-container" id="doctors">
       <SectionHeader
         heading="OUR DOCTORS"
         subheading="Qualified Healthcare Professionals"

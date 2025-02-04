@@ -3,7 +3,7 @@ import SectionHeader from "../common/SectionHeader";
 
 const Services = () => {
   return (
-    <section className="section-container">
+    <section className="section-container" id="services">
       <SectionHeader
         heading="Services"
         subheading="Excellent Medical Services"

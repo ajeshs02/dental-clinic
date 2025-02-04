@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ... */
+html {
+  scroll-behavior: smooth;
+}
 
 @layer base {
   * {
@@ -24,5 +26,13 @@
 
   .section-container {
     @apply my-16 p-1;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
   }
 }
