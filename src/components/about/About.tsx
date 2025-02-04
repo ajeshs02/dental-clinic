@@ -35,8 +35,7 @@ export default function AboutSection() {
               ))}
             </div>
           {/* icons end */}
-          </div>
-          
+          </div>         
           {/* Col */}
           <div className="relative ms-4">
             <img className="w-full rounded-xl" src={herobg} alt="Image Description" />

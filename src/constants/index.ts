@@ -1,4 +1,6 @@
-import { FaUserMd, FaAmbulance, FaMicroscope, FaProcedures, FaStethoscope } from "react-icons/fa";
+import { FaUserMd, FaAmbulance, FaMicroscope, FaProcedures, FaStethoscope, FaTwitter, FaFacebookF, FaLinkedinIn, FaInstagram  } from "react-icons/fa";
+
+
 
 export const aboutIcons = [
   { icon: FaUserMd, title: "Qualified", subtitle: "Doctors" },
@@ -47,3 +49,23 @@ export const services = [
     description: "Kasd dolor no lorem nonumy sit labore tempor at justo rebun rebum stet, justo elitr dolor amet sit.",
   },
 ];
+
+
+
+// Footer Social Icons (Stored as References)
+export const socialIcons = [
+  { icon: FaTwitter, name: "Twitter", link: "https://twitter.com" },
+  { icon: FaFacebookF, name: "Facebook", link: "https://facebook.com" },
+  { icon: FaLinkedinIn, name: "LinkedIn", link: "https://linkedin.com" },
+  { icon: FaInstagram, name: "Instagram", link: "https://instagram.com" },
+];
+
+// Footer Links
+export const footerLinks = [
+  { title: "Home", href: "/" },
+  { title: "About Us", href: "/about" },
+  { title: "Services", href: "/services" },
+  { title: "Team", href: "/team" },
+  { title: "Get in Touch", href: "/contact" },
+];
+
