@@ -4,6 +4,10 @@ import {
   FaMicroscope,
   FaProcedures,
   FaStethoscope,
+  FaTwitter,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
 } from "react-icons/fa";
 
 export const aboutIcons = [
@@ -105,4 +109,21 @@ export const doctors = [
     specialty: "Dermatologist",
     image: "doctor-3.png",
   },
+];
+
+// Footer Social Icons (Stored as References)
+export const socialIcons = [
+  { icon: FaTwitter, name: "Twitter", link: "https://twitter.com" },
+  { icon: FaFacebookF, name: "Facebook", link: "https://facebook.com" },
+  { icon: FaLinkedinIn, name: "LinkedIn", link: "https://linkedin.com" },
+  { icon: FaInstagram, name: "Instagram", link: "https://instagram.com" },
+];
+
+// Footer Links
+export const footerLinks = [
+  { title: "Home", href: "/" },
+  { title: "About Us", href: "/about" },
+  { title: "Services", href: "/services" },
+  { title: "Team", href: "/team" },
+  { title: "Get in Touch", href: "/contact" },
 ];
