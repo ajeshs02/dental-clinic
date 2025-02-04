@@ -1,3 +1,3 @@
 export default function Navbar() {
-  return <header>Navbar</header>;
+  return <header className="wrapper">Navbar</header>;
 }

@@ -21,4 +21,8 @@
   .wrapper {
     @apply global__padding max-w-[100rem] ml-auto mr-auto;
   }
+
+  .section-container {
+    @apply my-16 p-1;
+  }
 }
