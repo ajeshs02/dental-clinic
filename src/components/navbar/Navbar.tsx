@@ -17,15 +17,7 @@ export default function Navbar() {
   });
 
   return (
-    <motion.header
-      variants={{
-        visible: { y: 0 }, // Visible state at top
-        hidden: { y: "-100%" }, // Hidden state off-screen
-      }}
-      animate={isHidden ? "hidden" : "visible"}
-      transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="wrapper shadow-md bg-white flex-between py-4 fixed top-0 left-0 right-0 z-50"
-    >
+    <NavbarWrapper isHidden={isHidden}>
       {/* Left Logo */}
       <div className="text-blue-500 text-3xl">MEDINOVA</div>
 
@@ -34,15 +26,41 @@ export default function Navbar() {
         <ul className="flex-center w-fit gap-x-5">
           {navLinks.map((data, index) => (
             <li key={index}>
-              <a href={data.link}>{data.label}</a>
+              <a
+                href={data.link}
+                className="hover:text-blue-500 transition-colors"
+              >
+                {data.label}
+              </a>
             </li>
           ))}
         </ul>
       </nav>
 
+      {/* Mobile Sidebar (hide in large screen and above) */}
       <div className="lg:hidden">
         <Sidebar />
       </div>
+    </NavbarWrapper>
+  );
+}
+
+// wrapper component for navbar with framer motion logic
+function NavbarWrapper({
+  children,
+  isHidden,
+}: {
+  children: React.ReactNode;
+  isHidden: boolean;
+}) {
+  return (
+    <motion.header
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: isHidden ? 0 : 1, y: isHidden ? -100 : 0 }} // Hide navbar on scroll down
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="wrapper shadow-md bg-white flex-between py-4 fixed top-0 left-0 right-0 z-50"
+    >
+      {children}
     </motion.header>
   );
 }

@@ -16,6 +16,7 @@ export const navLinks = [
   { label: "Service", link: "#services" },
   { label: "Doctors", link: "#doctors" },
   { label: "Testimonials", link: "#testimonials" },
+  { label: "Contact Us", link: "#contact" },
 ];
 
 export const aboutIcons = [
