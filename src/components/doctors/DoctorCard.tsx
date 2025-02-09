@@ -12,10 +12,6 @@ export function DoctorCard({ name, specialty, image }: DoctorProps) {
     <Card className="w-full m-1 max-w-sm  mx-auto shadow-lg rounded-xl border border-gray-300 overflow-hidden">
       <div className="relative">
         <img src={image} alt={name} className="w-full h-56 object-cover" />
-        <div className="absolute top-2 left-2 bg-blue-500 text-white p-2 rounded-full">
-          {/* Add any icon or action here if needed */}
-          <span>&larr;</span>
-        </div>
       </div>
       <CardContent className="p-4">
         <h3 className="text-xl font-bold text-gray-800">{name}</h3>

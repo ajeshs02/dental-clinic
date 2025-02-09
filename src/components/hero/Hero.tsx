@@ -10,10 +10,20 @@ export default function HeroSectionImageWithReviews() {
       {/* hero content */}
       <div className="relative z-10 text-white text-center sm:text-left px-10 mx-6">
         {/* hero heading */}
-        <FadeInDiv delay={0.2} duration={0.8}>
+        <motion.div
+            initial={{ opacity: 0, x: -90 }} // Start slightly to the left
+            whileInView={{ opacity: 1, x: 0 }} // Fade in and move into place
+            transition={{
+              duration: 1.0, // Smooth transition
+              delay: 0.6, // Delay for a smooth flow
+              ease: "easeInOut", // Soft easeOutExpo effect
+            }}
+          >
           <span className="text-lg sm:text-base md:text-xl font-semibold uppercase text-blue-400">
             Welcome to Medinova
           </span>
+          </motion.div>
+          <FadeInDiv delay={1.4} duration={1.5}>
           <h1 className="text-3xl sm:text-xl md:text-7xl font-bold mt-2">
             Best Healthcare Solution
             <br />
@@ -23,7 +33,7 @@ export default function HeroSectionImageWithReviews() {
 
         {/* hero description */}
         <FadeInDiv
-          delay={0.4}
+          delay={.5}
           duration={1.5}
           className="mt-6 max-w-3xl text-lg sm:text-sm md:text-xl"
         >

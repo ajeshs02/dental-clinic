@@ -37,11 +37,11 @@ function AboutLeftInfoWrapper({
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -50 }} // Start slightly to the left
+      initial={{ opacity: 0, x: -90 }} // Start slightly to the left
       whileInView={{ opacity: 1, x: 0 }} // Fade in and move into place
       transition={{
         duration: 0.8, // Smooth transition
-        delay: 0.2, // Delay for a smooth flow
+        delay: 0.3, // Delay for a smooth flow
         ease: "easeInOut", // Soft easeOutExpo effect
       }}
       viewport={{ once: true }}

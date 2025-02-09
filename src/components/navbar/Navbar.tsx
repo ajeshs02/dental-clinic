@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <NavbarWrapper isHidden={isHidden}>
       {/* Left Logo */}
-      <div className="text-blue-500 text-3xl">MEDINOVA</div>
+      <div className="text-blue-500 text-4xl">MEDINOVA</div>
 
       {/* Right Links */}
       <nav className="hidden lg:block">
@@ -27,9 +27,11 @@ export default function Navbar() {
           {navLinks.map((data, index) => (
             <li key={index}>
               <a
-                href={data.link}
-                className="hover:text-blue-500 transition-colors"
-              >
+                  href={data.link}
+                  className="relative text-lg px-1 text-black transition-colors duration-300 
+                            hover:bg-gradient-to-r hover:from-blue-800 hover:to-blue-400 
+                            hover:bg-clip-text hover:text-transparent active:to-blue-900 "
+                >
                 {data.label}
               </a>
             </li>

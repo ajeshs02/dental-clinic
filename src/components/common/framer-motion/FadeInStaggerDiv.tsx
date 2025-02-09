@@ -17,8 +17,8 @@ export default function FadeInStaggerDiv({
       initial={{ opacity: 0, y: 10 }} // Start slightly lower and faded
       whileInView={{ opacity: 1, y: 0 }} // Fade in and move up
       transition={{
-        duration: 0.3, // Longer duration for smoothness
-        delay: index * 0.2, // Reduced delay for better flow
+        duration: 0.5, // Longer duration for smoothness
+        delay: index * 0.3, // Reduced delay for better flow
         ease: "easeInOut",
       }}
       viewport={{ once: true }}

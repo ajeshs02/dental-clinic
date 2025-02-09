@@ -28,7 +28,7 @@ function AboutRightImageWrapper({
       whileInView={{ opacity: 1, x: 0 }} // Fade in and move into place
       transition={{
         duration: 0.8, // Smooth transition
-        delay: 0.2, // Delay for a smooth flow
+        delay: 1.0, // Delay for a smooth flow
         ease: "easeInOut", // Soft easeOutExpo effect
       }}
       viewport={{ once: true }}
