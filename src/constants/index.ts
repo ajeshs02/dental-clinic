@@ -129,9 +129,9 @@ export const socialIcons = [
 
 // Footer Links
 export const footerLinks = [
-  { title: "Home", href: "/" },
-  { title: "About Us", href: "/about" },
-  { title: "Services", href: "/services" },
-  { title: "Team", href: "/team" },
-  { title: "Get in Touch", href: "/contact" },
+  { label: "Home", link: "#" },
+  { label: "About", link: "#about" },
+  { label: "Service", link: "#services" },
+  { label: "Doctors", link: "#doctors" },
+  { label: "Testimonials", link: "#testimonials" },
 ];
